@@ -1,0 +1,19 @@
+\documentclass[a4paper,landscape]{article}
+\usepackage[margin=5mm]{geometry}
+
+\usepackage{pdfpages}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt, draw] at (current page.center) {\includegraphics[width=10in, height=3.5in]{eruption_rules_folio_front.pdf}};
+\path (-5.125in, -1.875in) -- (5.125in, 1.875in);
+\end{tikzpicture}
+
+\newpage
+
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt] at (current page.center) {\includegraphics[width=10in, height=3.5in]{eruption_rules_folio_back.pdf}};
+\path (-5.125in, -1.875in) -- (5.125in, 1.875in);
+\end{tikzpicture}
+
+\end{document}
