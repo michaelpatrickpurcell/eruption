@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+
+\usepackage{fontspec}
+\setmainfont[Scale=2.0]{Earthquake MF}
+
+\definecolor{eruption_purple}{HTML}{513c3c}
+
+\color{eruption_purple}
+
+\begin{document}
+\begin{tikzpicture}
+\path (-6.3cm, -5cm) -- (6.3cm, 5cm);
+
+\Huge
+\node[inner sep=0pt] at (0, 3.75cm) {Eruption};
+
+\setmainfont{URW Classico}
+\Large
+\node[inner sep=0pt] at (0,2.25cm) {A dexterity game for 2-6 people};
+
+\node[inner sep=0pt] at (0,-1cm) {\includegraphics{Images/one_volcano.png}};
+
+\huge
+\node[inner sep=0pt] at (0,-4.25cm) {Designed by Michael Purcell};
+
+\end{tikzpicture}
+\end{document}
